@@ -15,7 +15,7 @@ from .manifests import ManifestHeader, ManifestInterface
 LOGGER = logging.getLogger(__name__)
 
 
-BUILD_TIMESTAMP = datetime.datetime.utcnow().isoformat()[:-7] + "Z"
+BUILD_TIMESTAMP = f"{datetime.datetime.utcnow().isoformat()[:-7]}Z"
 MARKDOWN_LINE_BREAK = "<br />"
 
 
